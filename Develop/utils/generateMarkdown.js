@@ -6,19 +6,15 @@ function renderLicenseBadge(license) {
     return `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`
 
   } else if (license == 'GNU General Public') {
-
     return `[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)`
 
   } else if (license == 'MIT') {
-
     return `![License](https://img.shields.io/badge/license-MIT-blue)`
 
   } else if (license == 'The Unlicense') {
-
     return `![License](https://img.shields.io/badge/license-Unlicense-blue.svg)`
 
   } else if (license == 'None') {
-
     return ''
     
   }
@@ -29,22 +25,18 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license == 'Apache 2.0') {
-    return `https://choosealicense.com/licenses/apache-2.0/`
+    return `https://www.apache.org/licenses/LICENSE-2.0`
 
   } else if (license == 'GNU General Public') {
-
-    return `https://choosealicense.com/licenses/gpl-3.0/`
+    return `https://www.gnu.org/licenses/gpl-3.0.en.html`
 
   } else if (license == 'MIT') {
-
-    return `https://choosealicense.com/licenses/mit/#`
+    return `https://opensource.org/licenses/MIT`
 
   } else if (license == 'The Unlicense') {
-
-    return `https://choosealicense.com/licenses/unlicense/`
+    return `https://unlicense.org/`
 
   } else if (license == 'None') {
-
     return ''
     
   }
@@ -65,7 +57,7 @@ function renderGithubLink(username) {
   if (username) {
     return `Visit my GitHub at https://github.com/` + username
   } else {
-    return '#'
+    return ''
   }
 }
 
@@ -102,7 +94,7 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions
-${renderGithubLink(data.username)}
+${renderGithubLink(data.username)}.
 ${data.contact}
 ${data.email}
 `;
