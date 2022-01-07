@@ -1,28 +1,74 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+
+function renderLicenseBadge(license) {
+  if (license == 'None') {
+    return ''
+  } else {
+    return license + `![License](https://img.shields.io/badge/license--blue)`
+  }
+}
+
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license == 'Apache 2.0') {
+    return `https://choosealicense.com/licenses/apache-2.0/`
+
+  } else if (license == 'GNU General Public') {
+
+    return `https://choosealicense.com/licenses/gpl-3.0/`
+
+  } else if (license == 'MIT') {
+
+    return `https://choosealicense.com/licenses/mit/#`
+
+  } else if (license == 'The Unlicense') {
+
+    return `https://choosealicense.com/licenses/unlicense/`
+
+  } else if (license == 'None') {
+
+    return ''
+    
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license) {
+    return  license + ` is the license used for this project.`
+  } else {
+    return ''
+  }
+}
+
+//Function to create link to GitHub profile
+function renderGithubLink(username) {
+  if (username) {
+    return `Visit my GitHub at https://github.com/` + username
+  } else {
+    return '#'
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.projectTitle}
 
+${renderLicenseBadge(data.license)}
+
 ## Description
 ${data.description}
 
 ## Table of Contents
-- [Installation] (#Installation)
-- [Usage] (#Usage)
-- [License] (#License)
-- [Contributing] (#Contributing)
-- [Tests] (#Tests)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contributing](#Contributing)
+* [Tests](#Tests)
 
 ## Installation
 ${data.install}
@@ -31,7 +77,8 @@ ${data.install}
 ${data.usage}
 
 ## License
-${data.license}
+${renderLicenseSection(data.license)}
+* ${renderLicenseLink(data.license)}
 
 ## Contributing
 ${data.contributing}
@@ -40,10 +87,9 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions
-Email Address: ${data.email}
-GitHub username: ${data.username} 
-Link to GitHub: ${data.link}
+${renderGithubLink(data.username)}
 ${data.contact}
+${data.email}
 `;
 }
 
