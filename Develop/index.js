@@ -43,7 +43,7 @@ const questions = [
     {
         type: 'checkbox',
         name: 'contents',
-        message: 'Please check the boxes of what to be included in your README.',
+        message: 'Check the boxes of what to be included in your README.',
         choices: [ 'Installation', 'Usage', 'License', 'Contributing', 'Tests', 'Questions' ]
     },
     {
@@ -54,28 +54,29 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'Please provide instructions and examples for use.'
+        message: 'Provide instructions and examples for use.'
     },
     {
-        type: 'input',
+        type: 'checkbox',
         name: 'license',
-        message: 'Which license have you chosen?'
+        message: 'Check the box next to the license of your choice.',
+        choices: [ 'Apache 2.0', 'GNU General Public', 'MIT', 'The Unlicense', 'None' ]
     },
     {
         type: 'input',
         name: 'contributing',
-        message: 'Please provide guildlines for how other developers can contribute to your project.'
+        message: 'Provide guildlines for how other developers can contribute to your project.'
     },
     {
         type: 'input',
         name: 'tests',
         message: 'Please provide tests for your application and how to run them.'
     },
-    {
-        type: 'input',
-        name: 'link',
-        message: 'Please provide a link to your GitHub profile.'
-    },
+    // {
+    //     type: 'input',
+    //     name: 'link',
+    //     message: 'Please provide a link to your GitHub profile.'
+    // },
     {
         type: 'input',
         name: 'contact',
