@@ -17,8 +17,8 @@ Simply answer questions, as detailed as you'd like, to generate a professional, 
 
 ## Visual
 
-<img src="./develop/images/node.jpg" alt="Node.js"/>
-<img src="./develop/images/readme.jpg" alt="Generated README"/>
+<img src="./Develop/images/node.jpg" alt="Node.js"/>
+<img src="./Develop/images/readme.jpg" alt="Generated README"/>
 
 ## Credits
 
