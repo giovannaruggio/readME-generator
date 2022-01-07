@@ -4,21 +4,6 @@ const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
-
-// const content = [ 'Installation', 'Usage', 'License', 'Contributing', 'Tests', 'Questions' ];
-
-// const checkList = [
-//     {
-//         type: 'checkbox',
-//         name: 'contents',
-//         message: 'Please check the boxes of what to be included in your README.',
-//         choices: 'tableOfContents'
-//     }
-// ]
-
-// const checkContents = content.map(checkList);
-// console.log(checkContents);
-
 const questions = [
     {
         type: 'input',
@@ -72,11 +57,6 @@ const questions = [
         name: 'tests',
         message: 'Please provide tests for your application and how to run them.'
     },
-    // {
-    //     type: 'input',
-    //     name: 'link',
-    //     message: 'Please provide a link to your GitHub profile.'
-    // },
     {
         type: 'input',
         name: 'contact',
