@@ -26,12 +26,6 @@ const questions = [
         message: 'Please provide a short description explaining the what, when, why, and how of your project.'
     },
     {
-        type: 'checkbox',
-        name: 'contents',
-        message: 'Check the boxes of what to be included in your README.',
-        choices: [ 'Installation', 'Usage', 'License', 'Contributing', 'Tests', 'Questions' ]
-    },
-    {
         type: 'input',
         name: 'install',
         message: 'What are the steps required to install your project?'
@@ -42,10 +36,10 @@ const questions = [
         message: 'Provide instructions and examples for use.'
     },
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
-        message: 'Check the box next to the license of your choice.',
-        choices: [ 'Apache 2.0', 'GNU General Public', 'MIT', 'The Unlicense', 'None' ]
+        message: 'Which license will you use?',
+        choices: [ 'Apache 2.0', 'GNU General Public', 'MIT']
     },
     {
         type: 'input',
