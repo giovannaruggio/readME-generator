@@ -13,12 +13,11 @@ A command-line application that allows for a user to dynamically generate a prof
 - [Links](#links)
 
 ## Usage
-Simply answer questions, as detailed as you'd like, to generate a professional, high-quality README for your next open-source project. 
+Open project in your command-line app, answer questions, as detailed as you'd like, to generate a professional, high-quality README for your next open-source project. Your new and improved generatedREADME will appear in the generatedFile folder.
 
 ## Visual
 
-<img src="./Develop/images/node.jpg" alt="Node.js"/>
-<img src="./Develop/images/readme.jpg" alt="Generated README"/>
+<img src="./assets/demoGif.gif" alt="Application Gif"/>
 
 ## Credits
 
@@ -30,7 +29,6 @@ Simply answer questions, as detailed as you'd like, to generate a professional, 
 - GitHub Repository
     - https://github.com/giovannaruggio/readME-generator
 - Demo Video
-    - https://drive.google.com/file/d/1AyBRjnHOeRLbGyBtQlyqLTLwlhdF5Zyi/view?usp=sharing
-
+    - https://drive.google.com/file/d/1zXvOaNR7TTuQUhobLJoTOBXllEvU2_1q/view?usp=sharing
 
 
