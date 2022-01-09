@@ -13,7 +13,7 @@ A command-line application that allows for a user to dynamically generate a prof
 - [Links](#links)
 
 ## Usage
-Open project in your command-line app, answer questions, as detailed as you'd like, to generate a professional, high-quality README for your next open-source project. Your new and improved generatedREADME will appear in the generatedFile folder. Still not sure? A walk-through video can be found at https://drive.google.com/file/d/1zXvOaNR7TTuQUhobLJoTOBXllEvU2_1q/view?usp=sharing.
+Open project in your command-line app, answer questions, as detailed as you'd like, to generate a professional, high-quality README for your next open-source project. Your new and improved generatedREADME will appear in the generatedFile folder. Still un-sure? A walk-through video can be found at https://drive.google.com/file/d/1zXvOaNR7TTuQUhobLJoTOBXllEvU2_1q/view?usp=sharing.
 
 ## Visual
 
