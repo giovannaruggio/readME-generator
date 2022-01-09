@@ -11,9 +11,6 @@ function renderLicenseBadge(license) {
   } else if (license == 'MIT') {
     return `![License](https://img.shields.io/badge/license-MIT-blue)`
 
-  } else if (license == 'The Unlicense') {
-    return `![License](https://img.shields.io/badge/license-Unlicense-blue.svg)`
-
   } else if (license == 'None') {
     return ''
     
@@ -32,9 +29,6 @@ function renderLicenseLink(license) {
 
   } else if (license == 'MIT') {
     return `https://opensource.org/licenses/MIT`
-
-  } else if (license == 'The Unlicense') {
-    return `https://unlicense.org/`
 
   } else if (license == 'None') {
     return ''
