@@ -71,11 +71,11 @@ ${renderLicenseBadge(data.license)}
 ${data.description}
 
 ## Table of Contents
-* [Installation](#Installation)
-* [Usage](#Usage)
-* [License](#License)
-* [Contributing](#Contributing)
-* [Tests](#Tests)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
 
 ## Installation
 ${data.install}
@@ -84,6 +84,7 @@ ${data.install}
 ${data.usage}
 
 ## License
+## ${renderLicenseBadge(data.license)}
 ${renderLicenseSection(data.license)}
 * ${renderLicenseLink(data.license)}
 
@@ -96,7 +97,7 @@ ${data.tests}
 ## Questions
 ${renderGithubLink(data.username)}.
 ${data.contact}
-${data.email}
+* ${data.email}
 `;
 }
 
