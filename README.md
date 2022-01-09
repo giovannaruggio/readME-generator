@@ -17,7 +17,7 @@ Open project in your command-line app, answer questions, as detailed as you'd li
 
 ## Visual
 
-<img src="./assets/demoGif.gif" alt="Application Gif"/>
+<img src="./demo/demoGif.gif" alt="Application Gif"/>
 
 ## Credits
 
